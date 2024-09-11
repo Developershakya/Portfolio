@@ -11,13 +11,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-const connection = mysql.createConnection({
+/* const connection = mysql.createConnection({
     host:'localhost',
     user:'root',
     database:'Contacts',
     password:'1234'
 
-});
+}); */
 app.get('/', (req,res) => {
     res.render('./index.ejs');
 });
